@@ -1,0 +1,41 @@
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-xgb-ink: #0F172A;
+  --color-xgb-lime: #84CC16;
+  --color-xgb-surface: #1E293B;
+  --color-xgb-muted: #94A3B8;
+  --color-xgb-code: #1E1B2E;
+  --color-xgb-bg: #FFFFFF;
+  --color-xgb-dark-bg: #0F172A;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-xgb-bg text-xgb-ink font-body antialiased;
+}
+
+/* Code blocks */
+pre {
+  @apply bg-xgb-code text-gray-200 p-4 rounded-lg overflow-x-auto text-sm;
+}
+code {
+  @apply font-mono text-sm;
+}
+
+/* Sidebar nav */
+.sidebar-link {
+  @apply block px-3 py-1.5 text-sm text-xgb-muted hover:text-xgb-ink hover:bg-gray-100 rounded transition-colors no-underline;
+}
+.sidebar-link.active {
+  @apply text-xgb-lime font-medium;
+}

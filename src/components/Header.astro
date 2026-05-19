@@ -1,0 +1,25 @@
+---
+const sections = [
+  { slug: 'concept', name: 'Concept' },
+  { slug: 'math', name: 'Math' },
+  { slug: 'code', name: 'Code' },
+  { slug: 'compare', name: 'Compare' },
+  { slug: 'papers', name: 'Papers' },
+];
+---
+
+<header class="border-b border-gray-200 bg-white/95 backdrop-blur-sm sticky top-0 z-10">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="font-mono text-lg text-xgb-ink font-bold no-underline tracking-tight">
+      <span class="text-xgb-lime">&#x2588;</span> xgboost
+    </a>
+    <div class="hidden md:flex gap-1 text-sm">
+      {sections.map(s => (
+        <a href={`/${s.slug}/`} class="sidebar-link font-mono text-xs uppercase tracking-wider">
+          {s.name}
+        </a>
+      ))}
+    </div>
+    <a href="/about/" class="text-sm text-xgb-muted hover:text-xgb-ink no-underline hidden md:block font-mono">about</a>
+  </nav>
+</header>

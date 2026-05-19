@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const sections = ['concept', 'math', 'code', 'compare', 'papers'];
+  return sections.map(s => ({ params: { section: s } }));
+}
+
+const { section } = Astro.params;
+const labels: Record<string, string> = { concept: 'Concept', math: 'Math', code: 'Code', compare: 'Compare', papers: 'Papers' };
+const label = labels[section] || section;
+
+const articles = await getCollection('articles', ({ data }) => data.section === section);
+articles.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+---
+
+<BaseLayout title={`${label} · XGBoost`} description={`${label} articles`}>
+  <div class="max-w-3xl mx-auto px-8 py-12">
+    <h1 class="font-heading text-3xl text-xgb-ink font-bold mb-2">{label}</h1>
+    <p class="text-xgb-muted mb-8">{articles.length} articles</p>
+    <div class="space-y-2">
+      {articles.map(article => (
+        <a href={`/${section}/${article.id}/`} class="block p-4 border border-xgb-border rounded-md hover:border-xgb-lime/30 transition-colors no-underline group">
+          <h2 class="font-heading text-base text-xgb-ink font-bold group-hover:text-xgb-lime transition-colors">{article.data.title}</h2>
+          <p class="text-sm text-xgb-muted mt-0.5">{article.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

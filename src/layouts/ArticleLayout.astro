@@ -1,0 +1,44 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  publishDate: string;
+  category: string;
+  readingTime?: number;
+}
+
+const { title, description, publishDate, category, readingTime } = Astro.props;
+const slug = Astro.url.pathname;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="max-w-3xl mx-auto px-6 py-12">
+    <header class="mb-10">
+      <nav class="text-xs text-xgb-muted mb-4 font-mono">
+        <a href="/" class="hover:text-xgb-ink no-underline">Home</a> /
+        <a href={`/${category}/`} class="hover:text-xgb-ink no-underline"> {category}</a> /
+        <span class="text-xgb-ink">{title}</span>
+      </nav>
+      <h1 class="font-mono text-3xl md:text-4xl text-xgb-ink font-bold leading-tight mb-4">
+        {title}
+      </h1>
+      <div class="flex items-center gap-4 text-xs text-xgb-muted font-mono">
+        <time datetime={publishDate}>{new Date(publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+        {readingTime && <span>{readingTime} min read</span>}
+      </div>
+    </header>
+
+    <div class="prose prose-slate max-w-none">
+      <slot />
+    </div>
+
+    <footer class="mt-16 pt-8 border-t border-gray-200">
+      <nav class="flex justify-between text-xs font-mono">
+        <a href="/" class="text-xgb-muted hover:text-xgb-ink no-underline">← Home</a>
+        <a href={`/${category}/`} class="text-xgb-muted hover:text-xgb-ink no-underline">More {category} →</a>
+      </nav>
+    </footer>
+  </article>
+</BaseLayout>

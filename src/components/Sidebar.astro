@@ -1,0 +1,32 @@
+---
+const sections = [
+  { slug: 'concept', label: 'Concept' },
+  { slug: 'math', label: 'Math' },
+  { slug: 'code', label: 'Code' },
+  { slug: 'compare', label: 'Compare' },
+  { slug: 'papers', label: 'Papers' },
+];
+const currentPath = Astro.url.pathname;
+---
+
+<aside class="w-56 shrink-0 hidden lg:block">
+  <nav class="sticky top-16 pt-8 pb-12">
+    <a href="/" class="block font-heading text-lg text-xgb-ink font-bold mb-6 no-underline">
+      XGBoost
+    </a>
+    <div class="space-y-0.5">
+      {sections.map(s => {
+        const sectionPath = `/${s.slug}/`;
+        const isActive = currentPath.startsWith(sectionPath) || (currentPath === '/' && s.slug === 'concept');
+        return (
+          <a href={sectionPath} class={`sidebar-link ${isActive ? 'active' : ''}`}>
+            {s.label}
+          </a>
+        );
+      })}
+    </div>
+    <div class="mt-6 pt-6 border-t border-xgb-border">
+      <a href="/about/" class="sidebar-link">About</a>
+    </div>
+  </nav>
+</aside>

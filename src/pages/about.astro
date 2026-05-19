@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About · XGBoost Encyclopedia"
+  description="Editorial stance and methodology of the XGBoost Reader's Encyclopedia — an independent, community-maintained knowledge resource."
+>
+  <article class="max-w-3xl mx-auto px-6 py-12">
+    <h1 class="font-mono text-3xl text-xgb-ink font-bold mb-8">About This Encyclopedia</h1>
+
+    <div class="prose prose-slate max-w-none">
+      <section class="mb-10">
+        <h2 class="font-mono text-xl text-xgb-ink font-bold">Editorial Stance</h2>
+        <p>
+          The XGBoost Reader's Encyclopedia is an <strong>independent, community-maintained knowledge resource</strong> about the XGBoost gradient boosting algorithm. It is not a replacement for the official XGBoost documentation at <a href="https://xgboost.readthedocs.io/">xgboost.readthedocs.io</a>.
+        </p>
+        <p>
+          Our purpose is complementary: we provide <strong>concept explanations</strong> for those who want to understand the "why" behind the "how", <strong>mathematical derivations</strong> with explicit steps (not just final formulas), annotated readings of key papers (Chen & Guestrin 2016, the original), and <strong>unbiased benchmarks</strong> against LightGBM, CatBoost, and other gradient boosting implementations.
+        </p>
+        <p>
+          We are independent contributors with no affiliation to the official XGBoost project, DMLC, or any vendor. We publish this encyclopedia because we love the algorithm and believe its inner workings deserve clear exposition.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="font-mono text-xl text-xgb-ink font-bold">Methodology</h2>
+        <ul>
+          <li>All mathematical derivations are checked against the original papers and (where possible) against the XGBoost source code.</li>
+          <li>Benchmarks are run on controlled hardware with published parameters — you can reproduce them.</li>
+          <li>Code examples are Python-based, using the official <code>xgboost</code> package, tested against the latest stable release.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-mono text-xl text-xgb-ink font-bold">Contact</h2>
+        <p>For corrections, suggestions, or contributions: <a href="mailto:maintain@xgboost.org">maintain@xgboost.org</a></p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
