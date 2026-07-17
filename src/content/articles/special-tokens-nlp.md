@@ -9,17 +9,16 @@ Special tokens are control characters in the tokenizer vocabulary that serve str
 
 ## Common Special Tokens
 
-| Token | Purpose | Used By |
-|---|---|---|
-| `[CLS]` | Classification token — representation of entire sequence | BERT |
-| `[SEP]` | Separator between segments/sentences | BERT |
-| `[PAD]` | Padding to equalise sequence lengths in a batch | All models |
-| `[MASK]` | Masked token for masked language modeling | BERT, RoBERTa |
-| `[UNK]` | Unknown token — fallback for out-of-vocabulary | Older models |
-| `<s>` / `</s>` | Beginning/end of sequence (BOS/EOS) | LLaMA, T5, GPT |
-| `<unk>` | Unknown token (SentencePiece convention) | SentencePiece models |
-| `<pad>` | Padding token | SentencePiece models |
-| `[INST]` | Instruction marker | LLaMA instruction-tuned |
+- **`[CLS]`**: Classification token — representation of entire sequence · BERT
+- **`[SEP]`**: Separator between segments/sentences · BERT
+- **`[PAD]`**: Padding to equalise sequence lengths in a batch · All models
+- **`[MASK]`**: Masked token for masked language modeling · BERT, RoBERTa
+- **`[UNK]`**: Unknown token — fallback for out-of-vocabulary · Older models
+- **`<s>` / `</s>`**: Beginning/end of sequence (BOS/EOS) · LLaMA, T5, GPT
+- **`<unk>`**: Unknown token (SentencePiece convention) · SentencePiece models
+- **`<pad>`**: Padding token · SentencePiece models
+- **`[INST]`**: Instruction marker · LLaMA instruction-tuned
+
 
 ## Configuration
 

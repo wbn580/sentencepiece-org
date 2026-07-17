@@ -15,7 +15,7 @@ const articles = await getCollection('articles', ({ data }) => data.section === 
 articles.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
 ---
 
-<BaseLayout title={`${label} · XGBoost`} description={`${label} articles`}>
+<BaseLayout title={`${label} · SentencePiece Guide`} description={`${label} articles about tokenization and SentencePiece`}>
   <div class="max-w-3xl mx-auto px-8 py-12">
     <h1 class="font-heading text-3xl text-xgb-ink font-bold mb-2">{label}</h1>
     <p class="text-xgb-muted mb-8">{articles.length} articles</p>

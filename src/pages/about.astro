@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="About · XGBoost Encyclopedia"
-  description="Editorial stance and methodology of the XGBoost Reader's Encyclopedia — an independent, community-maintained knowledge resource."
+  title="About · SentencePiece Guide"
+  description="Editorial stance and methodology of SentencePiece Guide, an independent educational resource about tokenization."
 >
   <article class="max-w-3xl mx-auto px-6 py-12">
     <h1 class="font-mono text-3xl text-xgb-ink font-bold mb-8">About This Encyclopedia</h1>
@@ -13,28 +13,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <section class="mb-10">
         <h2 class="font-mono text-xl text-xgb-ink font-bold">Editorial Stance</h2>
         <p>
-          The XGBoost Reader's Encyclopedia is an <strong>independent, community-maintained knowledge resource</strong> about the XGBoost gradient boosting algorithm. It is not a replacement for the official XGBoost documentation at <a href="https://xgboost.readthedocs.io/">xgboost.readthedocs.io</a>.
+          SentencePiece Guide is an <strong>independent educational resource</strong> about SentencePiece and modern tokenization. It complements official library documentation with conceptual explanations, implementation guidance, comparisons, and research context.
         </p>
         <p>
-          Our purpose is complementary: we provide <strong>concept explanations</strong> for those who want to understand the "why" behind the "how", <strong>mathematical derivations</strong> with explicit steps (not just final formulas), annotated readings of key papers (Chen & Guestrin 2016, the original), and <strong>unbiased benchmarks</strong> against LightGBM, CatBoost, and other gradient boosting implementations.
+          Our purpose is to explain the <strong>why behind tokenization</strong>: lossless normalization, subword learning, vocabulary size, multilingual coverage, evaluation metrics, and trade-offs among BPE, Unigram, WordPiece, and byte-level methods.
         </p>
         <p>
-          We are independent contributors with no affiliation to the official XGBoost project, DMLC, or any vendor. We publish this encyclopedia because we love the algorithm and believe its inner workings deserve clear exposition.
+          We are independent contributors with no affiliation to Google, the SentencePiece maintainers, or any model vendor.
         </p>
       </section>
 
       <section class="mb-10">
         <h2 class="font-mono text-xl text-xgb-ink font-bold">Methodology</h2>
         <ul>
-          <li>All mathematical derivations are checked against the original papers and (where possible) against the XGBoost source code.</li>
-          <li>Benchmarks are run on controlled hardware with published parameters — you can reproduce them.</li>
-          <li>Code examples are Python-based, using the official <code>xgboost</code> package, tested against the latest stable release.</li>
+          <li>Algorithm claims are checked against primary papers and current library documentation.</li>
+          <li>Comparisons separate algorithms, file formats, and library implementations.</li>
+          <li>Code examples use reproducible inputs and state the relevant tokenizer configuration.</li>
         </ul>
       </section>
 
       <section>
         <h2 class="font-mono text-xl text-xgb-ink font-bold">Contact</h2>
-        <p>For corrections, suggestions, or contributions: <a href="mailto:maintain@xgboost.org">maintain@xgboost.org</a></p>
+        <p>Corrections and suggestions should include the affected URL and a supporting primary source.</p>
       </section>
     </div>
   </article>

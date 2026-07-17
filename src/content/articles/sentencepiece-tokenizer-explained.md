@@ -73,12 +73,11 @@ The Unigram model produces a **probability distribution** over all possible toke
 
 ### BPE vs Unigram: When to Use Which
 
-| | BPE | Unigram |
-|---|---|---|
-| Training speed | Faster | Slower (iterative pruning) |
-| Tokenization quality | Good | Slightly better (probabilistic) |
-| Multiple segmentations | Possible | Probabilistic, most likely chosen |
-| Used by | GPT-2, RoBERTa, LLaMA | ALBERT, T5, XLNet, mBART |
+- **Training speed**: Faster · Slower (iterative pruning)
+- **Tokenization quality**: Good · Slightly better (probabilistic)
+- **Multiple segmentations**: Possible · Probabilistic, most likely chosen
+- **Used by**: GPT-2, RoBERTa, LLaMA · ALBERT, T5, XLNet, mBART
+
 
 Both are supported by SentencePiece. In practice, the choice matters less than the vocabulary size and training data, but Unigram tends to produce slightly more linguistically meaningful segmentations.
 
@@ -86,12 +85,11 @@ Both are supported by SentencePiece. In practice, the choice matters less than t
 
 SentencePiece's vocabulary size is specified at training time. Common values:
 
-| Model | Vocab Size | Tokenizer |
-|---|---|---|
-| LLaMA 2 | 32,000 | SentencePiece BPE |
-| T5 | 32,128 | SentencePiece Unigram |
-| mBART | 250,000 | SentencePiece Unigram |
-| XLM-R | 250,000 | SentencePiece Unigram |
+- **LLaMA 2**: 32,000 · SentencePiece BPE
+- **T5**: 32,128 · SentencePiece Unigram
+- **mBART**: 250,000 · SentencePiece Unigram
+- **XLM-R**: 250,000 · SentencePiece Unigram
+
 
 Multilingual models use larger vocabularies to cover the writing systems of many languages. A 32K vocabulary works well for English; 250K is typical for models covering 100+ languages.
 

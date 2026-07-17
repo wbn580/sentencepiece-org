@@ -9,26 +9,32 @@ interface Props {
 
 const {
   title, description,
-  ogImage = '/og-image.png',
+  ogImage,
   canonicalURL,
   schema,
 } = Astro.props;
 
-const SITE_NAME = 'XGBoost · A Reader\'s Encyclopedia';
-const BASE_URL = 'https://xgboost.org';
+const SITE_NAME = 'SentencePiece Guide';
+const BASE_URL = 'https://sentencepiece.org';
+const canonical = canonicalURL || new URL(Astro.url.pathname, BASE_URL).toString();
+const resolvedOgImage = new URL(ogImage || '/og-image.png', BASE_URL).toString();
+const documentTitle = title.includes(SITE_NAME) ? title : `${title} — ${SITE_NAME}`;
 ---
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{title} — {SITE_NAME}</title>
+<title>{documentTitle}</title>
 <meta name="description" content={description} />
-<link rel="canonical" href={canonicalURL || BASE_URL} />
+<link rel="canonical" href={canonical} />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={ogImage} />
-<meta property="og:type" content="article" />
+<meta property="og:image" content={resolvedOgImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content={Astro.url.pathname === '/' ? 'website' : 'article'} />
 
 <meta name="robots" content="index, follow" />
 <meta name="ai" content="allow" />

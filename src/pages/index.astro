@@ -7,36 +7,36 @@ articles.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data
 const featured = articles.slice(0, 6);
 
 const paths = [
-  { slug: 'concept', name: 'Concept', desc: 'From decision trees to gradient boosting — build intuition step by step.' },
-  { slug: 'math', name: 'Math', desc: 'Loss functions, Newton approximation, regularization. With full derivations.' },
-  { slug: 'code', name: 'Code', desc: 'Practical guides with reproducible Python snippets. Everything tested.' },
-  { slug: 'compare', name: 'Compare', desc: 'XGBoost vs LightGBM vs CatBoost. Real benchmarks, not marketing.' },
-  { slug: 'papers', name: 'Papers', desc: 'Annotated readings of Chen & Guestrin 2016 and related work.' },
+  { slug: 'concept', name: 'Concept', desc: 'Subwords, normalization, vocabulary design, multilingual text, and detokenization.' },
+  { slug: 'math', name: 'Math', desc: 'Tokenizer quality, sequence length, fertility, and vocabulary trade-offs.' },
+  { slug: 'code', name: 'Code', desc: 'Train, evaluate, and integrate SentencePiece and other tokenizer libraries.' },
+  { slug: 'compare', name: 'Compare', desc: 'SentencePiece, BPE, WordPiece, Unigram, tiktoken, and modern alternatives.' },
+  { slug: 'papers', name: 'Papers', desc: 'Annotated tokenization research, benchmarks, fairness, and emerging methods.' },
 ];
 
 const homeSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'XGBoost · A Reader\'s Encyclopedia',
-  url: 'https://xgboost.org',
-  description: 'An independent, community-maintained knowledge resource about the XGBoost gradient boosting algorithm.',
+  name: 'SentencePiece Guide',
+  url: 'https://sentencepiece.org',
+  description: 'An independent guide to SentencePiece and modern subword tokenization.',
   inLanguage: 'en',
 });
 ---
 
 <BaseLayout
-  title="XGBoost · A Reader's Encyclopedia"
-  description="An independent, community-maintained encyclopedia about the XGBoost gradient boosting algorithm. Concept guides, math derivations, code tutorials, benchmarks, and annotated papers."
+  title="SentencePiece Guide · Modern Tokenization"
+  description="An independent guide to SentencePiece and modern tokenization: concepts, training, evaluation, comparisons, multilingual text, and research."
   schema={homeSchema}
 >
   <!-- Hero -->
   <section class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
-    <p class="font-mono text-xs text-xgb-lime uppercase tracking-widest mb-4">GradientBoost Notes</p>
+    <p class="font-mono text-xs text-xgb-lime uppercase tracking-widest mb-4">Language-Agnostic Tokenization</p>
     <h1 class="font-mono text-4xl md:text-5xl text-xgb-ink font-bold leading-tight mb-6">
-      XGBoost<br/><span class="text-xgb-muted font-normal">A Reader's Encyclopedia</span>
+      SentencePiece<br/><span class="text-xgb-muted font-normal">A Practical Tokenization Guide</span>
     </h1>
     <p class="max-w-2xl mx-auto text-xgb-muted leading-relaxed">
-      An independent knowledge resource for the XGBoost algorithm. We don't replace the official docs — we complement them with concept explanations, mathematical derivations, annotated papers, and unbiased benchmarks. Maintained by open-source contributors. Not affiliated with the XGBoost project.
+      A focused, independent resource for language-agnostic tokenization. Understand BPE and Unigram models, train reproducible tokenizers, evaluate quality, and compare modern libraries and algorithms.
     </p>
   </section>
 
@@ -57,7 +57,7 @@ const homeSchema = JSON.stringify({
     <h2 class="font-mono text-lg text-xgb-ink font-bold mb-6">Latest entries</h2>
     <div class="grid md:grid-cols-2 gap-4">
       {featured.map(article => (
-        <a href={`/${article.slug}/`} class="block p-5 border border-gray-200 rounded hover:border-xgb-lime/40 transition-colors no-underline group">
+        <a href={`/${article.data.section}/${article.id}/`} class="block p-5 border border-gray-200 rounded hover:border-xgb-lime/40 transition-colors no-underline group">
           <span class="text-xs text-xgb-lime font-mono uppercase tracking-wide">{article.data.category}</span>
           <h3 class="font-mono text-base text-xgb-ink font-bold mt-1 mb-2 group-hover:text-xgb-lime transition-colors">{article.data.title}</h3>
           <p class="text-xs text-xgb-muted leading-relaxed">{article.data.description}</p>

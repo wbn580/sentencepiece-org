@@ -23,12 +23,11 @@ WordPiece uses a ## prefix on tokens that continue from a previous token (not at
 
 ## WordPiece vs BPE
 
-| | WordPiece | BPE |
-|---|---|---|
-| Merge criterion | Likelihood score | Frequency |
-| Continuation tokens | Yes (## prefix) | No (in standard BPE) |
-| Used by | BERT, DistilBERT, ELECTRA | GPT, LLaMA, RoBERTa |
-| Training speed | Comparable | Slightly faster |
+- **Merge criterion**: Likelihood score · Frequency
+- **Continuation tokens**: Yes (## prefix) · No (in standard BPE)
+- **Used by**: BERT, DistilBERT, ELECTRA · GPT, LLaMA, RoBERTa
+- **Training speed**: Comparable · Slightly faster
+
 
 ## Implementation
 

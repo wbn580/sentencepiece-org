@@ -57,13 +57,12 @@ SentencePiece is not a tokenization algorithm itself but a **framework** that im
 
 ## Training Efficiency
 
-| Algorithm | Training Time | Memory | Parallelizable |
-|---|---|---|---|
-| BPE | Fast (merge operations) | Moderate | Limited (iterative) |
-| WordPiece | Fast (similar to BPE) | Moderate | Limited |
-| Unigram | Slower (iterative pruning) | Higher (seed vocab) | Yes (loss computation per token) |
-| SentencePiece BPE | Fast + overhead | Moderate | Limited |
-| SentencePiece Unigram | Slower | Higher | Yes |
+- **BPE**: Fast (merge operations) · Moderate · Limited (iterative)
+- **WordPiece**: Fast (similar to BPE) · Moderate · Limited
+- **Unigram**: Slower (iterative pruning) · Higher (seed vocab) · Yes (loss computation per token)
+- **SentencePiece BPE**: Fast + overhead · Moderate · Limited
+- **SentencePiece Unigram**: Slower · Higher · Yes
+
 
 BPE and WordPiece are simpler and faster to train but may produce less optimal vocabularies. SentencePiece Unigram trades training time for tokenization quality.
 

@@ -22,7 +22,7 @@ const { title, description, ogImage, canonicalURL, schema } = Astro.props;
   </head>
   <body>
     <Header />
-    <main>{Astro.slot}</main>
+    <main><slot /></main>
     <Footer />
   </body>
 </html>

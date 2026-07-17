@@ -16,4 +16,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://xgboost.org/sitemap-index.xml
+Sitemap: https://sentencepiece.org/sitemap-index.xml

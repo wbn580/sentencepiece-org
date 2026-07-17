@@ -5,12 +5,11 @@ interface Props {
   title: string;
   description: string;
   publishDate: string;
-  category: string;
+  section: string;
   readingTime?: number;
 }
 
-const { title, description, publishDate, category, readingTime } = Astro.props;
-const slug = Astro.url.pathname;
+const { title, description, publishDate, section, readingTime } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -18,7 +17,7 @@ const slug = Astro.url.pathname;
     <header class="mb-10">
       <nav class="text-xs text-xgb-muted mb-4 font-mono">
         <a href="/" class="hover:text-xgb-ink no-underline">Home</a> /
-        <a href={`/${category}/`} class="hover:text-xgb-ink no-underline"> {category}</a> /
+        <a href={`/${section}/`} class="hover:text-xgb-ink no-underline"> {section}</a> /
         <span class="text-xgb-ink">{title}</span>
       </nav>
       <h1 class="font-mono text-3xl md:text-4xl text-xgb-ink font-bold leading-tight mb-4">
@@ -37,7 +36,7 @@ const slug = Astro.url.pathname;
     <footer class="mt-16 pt-8 border-t border-gray-200">
       <nav class="flex justify-between text-xs font-mono">
         <a href="/" class="text-xgb-muted hover:text-xgb-ink no-underline">← Home</a>
-        <a href={`/${category}/`} class="text-xgb-muted hover:text-xgb-ink no-underline">More {category} →</a>
+        <a href={`/${section}/`} class="text-xgb-muted hover:text-xgb-ink no-underline">More {section} →</a>
       </nav>
     </footer>
   </article>
