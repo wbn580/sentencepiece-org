@@ -3,6 +3,7 @@ title: "Custom Tokenizer for Domain-Specific Text · Medical, Legal, Code"
 description: "How to train a tokenizer for specialised domains — medical text, legal documents, source code, and the importance of domain-specific training data."
 section: "code"
 publishDate: "2026-05-15T08:20:00Z"
+ogImage: "https://img.ulec.com.cn/AI/domain-specific-tokenizer-2026-1880x1253.jpg"
 ---
 A general-domain tokenizer (trained on Wikipedia + books) performs poorly on specialised text. Medical terms ("pneumonoultramicroscopicsilicovolcanoconiosis") are split into dozens of tokens. Code keywords are decomposed into characters. Domain-specific tokenization reduces sequence length and improves model efficiency.
 

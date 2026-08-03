@@ -3,6 +3,7 @@ title: "Evaluating Tokenizers · Intrinsic and Extrinsic Metrics"
 description: "How to evaluate tokenizer quality — intrinsic metrics (fertility, coverage, token/word ratio) and extrinsic evaluation through downstream task performance."
 section: "math"
 publishDate: "2026-05-15T08:15:00Z"
+ogImage: "https://img.ulec.com.cn/AI/evaluating-tokenizers-2026-1880x1253.jpg"
 ---
 
 A tokenizer's quality affects downstream model performance, but direct evaluation is often skipped in favour of training a model and checking if it works. This article covers metrics for evaluating tokenizers independently.

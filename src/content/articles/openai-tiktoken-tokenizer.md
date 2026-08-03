@@ -3,6 +3,7 @@ title: "OpenAI Tokenizer · tiktoken and the GPT Token Ecosystem"
 description: "How OpenAI's tokenizer works — the tiktoken library, cl100k_base encoding, counting tokens for API pricing, and the tokenizer's impact on GPT-4 costs."
 section: "code"
 publishDate: "2026-05-15T08:25:00Z"
+ogImage: "https://img.ulec.com.cn/AI/openai-tiktoken-tokenizer-2026-1732x1300.jpg"
 ---
 
 OpenAI's `tiktoken` library provides fast BPE tokenization for GPT-3, GPT-3.5, and GPT-4. Its most important practical function: counting tokens to estimate API costs.

@@ -5,6 +5,7 @@ section: "compare"
 publishDate: "2026-05-15T05:10:00Z"
 readingTime: 8
 tags: ["tokenization", "bpe", "wordpiece", "unigram", "comparison"]
+ogImage: "https://img.ulec.com.cn/AI/tokenization-algorithms-comparison-2026-1880x1253.jpg"
 ---
 
 Four algorithms dominate subword tokenization in modern NLP. They share a common goal — breaking text into subword units that balance vocabulary size against sequence length — but differ in their optimization objectives and training procedures.

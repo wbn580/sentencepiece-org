@@ -3,6 +3,7 @@ title: "Subword Tokenization · Why BPE, WordPiece and Unigram Work"
 description: "The theory behind subword tokenization — why character-level is too long, word-level fails on OOV, and subword units achieve an optimal balance of vocabulary size and sequence length."
 section: "concept"
 publishDate: "2026-05-15T08:10:00Z"
+ogImage: "https://img.ulec.com.cn/AI/subword-tokenization-theory-2026-1733x1300.jpg"
 ---
 
 Subword tokenization is the foundation of modern NLP. Every large language model relies on it. But why subwords rather than words or characters? The answer lies in a fundamental tradeoff between vocabulary size, sequence length, and the ability to handle unseen words.

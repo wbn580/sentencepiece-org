@@ -3,6 +3,7 @@ title: "WordPiece Tokenization · Google's Subword Algorithm"
 description: "How WordPiece tokenization works — the likelihood-based merge criterion, the ## prefix for continuation tokens, its use in BERT, and comparison with BPE."
 section: "concept"
 publishDate: "2026-05-15T08:15:00Z"
+ogImage: "https://img.ulec.com.cn/AI/wordpiece-tokenization-2026-1880x1111.jpg"
 ---
 
 WordPiece (Schuster & Nakajima, 2012; refined by Wu et al., 2016) is the tokenization algorithm used by BERT and its derivatives. It is similar to BPE but differs in its merge criterion — WordPiece optimises likelihood rather than frequency.

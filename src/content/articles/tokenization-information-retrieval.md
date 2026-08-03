@@ -3,6 +3,7 @@ title: "Tokenization in Information Retrieval · Search, TF-IDF, BM25"
 description: "How tokenization works in information retrieval systems — the differences from NLP tokenization, stemming, stopword removal, and why subword tokenizers aren't always better for search."
 section: "compare"
 publishDate: "2026-05-15T08:25:00Z"
+ogImage: "https://img.ulec.com.cn/AI/tokenization-information-retrieval-2026-1880x1253.jpg"
 ---
 Tokenization for search is fundamentally different from tokenization for neural models. Search prioritises recall (finding all relevant documents), while NLP prioritises semantic understanding.
 

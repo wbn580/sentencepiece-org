@@ -3,6 +3,7 @@ title: "Detokenization · Reconstructing Text from Tokens Losslessly"
 description: "How to reverse the tokenization process — the challenges of detokenization, why SentencePiece is lossless, and common detokenization errors."
 section: "concept"
 publishDate: "2026-05-15T08:15:00Z"
+ogImage: "https://img.ulec.com.cn/AI/detokenization-guide-2026-1880x1253.jpg"
 ---
 
 Detokenization — converting a sequence of tokens back into readable text — appears trivial but is one of the most common sources of subtle bugs in NLP pipelines. A tokenizer may be lossy (cannot perfectly reconstruct the original text), and different tokenizers handle this differently.

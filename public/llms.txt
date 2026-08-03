@@ -1,0 +1,30 @@
+# SentencePiece Guide
+
+> NLP and tokenizer readers.
+
+- Canonical site: https://sentencepiece.org/
+- Topic: AI
+- Scope: independent public information; verify time-sensitive facts with the responsible primary authority.
+
+## Public pages
+
+- [/](https://sentencepiece.org/)
+- [/about/](https://sentencepiece.org/about/)
+- [/code/](https://sentencepiece.org/code/)
+- [/code/domain-specific-tokenizer/](https://sentencepiece.org/code/domain-specific-tokenizer/)
+- [/code/openai-tiktoken-tokenizer/](https://sentencepiece.org/code/openai-tiktoken-tokenizer/)
+- [/code/special-tokens-nlp/](https://sentencepiece.org/code/special-tokens-nlp/)
+- [/code/tokenization-application-development/](https://sentencepiece.org/code/tokenization-application-development/)
+- [/code/tokenizer-libraries-comparison/](https://sentencepiece.org/code/tokenizer-libraries-comparison/)
+- [/code/training-sentencepiece-model/](https://sentencepiece.org/code/training-sentencepiece-model/)
+- [/compare/](https://sentencepiece.org/compare/)
+- [/compare/tokenization-algorithms-comparison/](https://sentencepiece.org/compare/tokenization-algorithms-comparison/)
+- [/compare/tokenization-in-llms/](https://sentencepiece.org/compare/tokenization-in-llms/)
+- [/compare/tokenization-information-retrieval/](https://sentencepiece.org/compare/tokenization-information-retrieval/)
+- [/compare/word-level-tokenization-obsolete/](https://sentencepiece.org/compare/word-level-tokenization-obsolete/)
+- [/concept/](https://sentencepiece.org/concept/)
+- [/concept/byte-level-bpe-tokenization/](https://sentencepiece.org/concept/byte-level-bpe-tokenization/)
+- [/concept/character-level-tokenization/](https://sentencepiece.org/concept/character-level-tokenization/)
+- [/concept/detokenization-guide/](https://sentencepiece.org/concept/detokenization-guide/)
+- [/concept/multilingual-tokenization/](https://sentencepiece.org/concept/multilingual-tokenization/)
+- [/concept/normalization-tokenization/](https://sentencepiece.org/concept/normalization-tokenization/)

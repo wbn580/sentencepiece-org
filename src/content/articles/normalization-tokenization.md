@@ -3,6 +3,7 @@ title: "Normalization in Tokenization · NFKC, Lowercasing, and Unicode"
 description: "How text normalisation affects tokenization — Unicode normalisation forms, the case folding debate, and when normalisation helps vs hurts model performance."
 section: "concept"
 publishDate: "2026-05-15T08:20:00Z"
+ogImage: "https://img.ulec.com.cn/AI/normalization-tokenization-2026-1880x1253.jpg"
 ---
 
 Text normalisation is the pre-tokenization step that standardises text into a consistent form. It's a double-edged sword: too much normalisation destroys information; too little produces inconsistent tokenization.

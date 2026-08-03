@@ -3,6 +3,7 @@ title: "Margin Notes · Building a Tokenization-Aware Application"
 description: "Practical guidance for developers building tokenization-aware applications — token counting, prompt budget management, and cost optimisation with tokenizer APIs."
 section: "code"
 publishDate: "2026-05-15T08:35:00Z"
+ogImage: "https://img.ulec.com.cn/AI/tokenization-application-development-2026-1880x1253.jpg"
 ---
 
 For developers building applications on LLM APIs, understanding tokenization is essential for cost control. Key patterns:

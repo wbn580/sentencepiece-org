@@ -3,6 +3,7 @@ title: "Tokenization for Multilingual NLP · Challenges and Solutions"
 description: "How tokenization handles multiple languages — script-specific challenges, the CJK problem, vocabulary allocation across writing systems, and the byte-fallback approach."
 section: "concept"
 publishDate: "2026-05-15T08:15:00Z"
+ogImage: "https://img.ulec.com.cn/AI/multilingual-tokenization-2026-1880x869.jpg"
 ---
 
 Multilingual tokenization is fundamentally harder than monolingual tokenization. A 32K vocabulary sufficient for English is grossly inadequate for languages that use different writing systems. This article surveys the challenges and current solutions.

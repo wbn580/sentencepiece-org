@@ -3,6 +3,7 @@ title: "Tokenization and Model Fairness · Bias in Subword Segmentation"
 description: "How tokenization choices create bias in language models — the differential treatment of languages, gendered tokenization, and emerging fairness research."
 section: "papers"
 publishDate: "2026-05-15T08:30:00Z"
+ogImage: "https://img.ulec.com.cn/AI/tokenization-fairness-bias-2026-1880x1253.jpg"
 ---
 Research in 2022–2025 revealed that tokenization choices have fairness implications. BPE/Unigram tokenizers trained predominantly on English allocate most vocabulary slots to English subwords, forcing non-English languages into less efficient tokenization. A Vietnamese sentence may require 3–5× more tokens than the equivalent English sentence — directly translating to higher inference cost and worse model performance (longer sequences lose information in the middle of the context window).
 

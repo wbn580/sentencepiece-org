@@ -3,6 +3,7 @@ title: "Tokenization in Large Language Models · LLaMA, GPT, and BERT"
 description: "How major LLMs handle tokenization — LLaMA's SentencePiece BPE, GPT-4's tokenizer, BERT's WordPiece, and why tokenization choices affect model performance and behaviour."
 section: "compare"
 publishDate: "2026-05-15T08:10:00Z"
+ogImage: "https://img.ulec.com.cn/AI/tokenization-in-llms-2026-1880x1253.jpg"
 ---
 
 Every large language model begins with a tokenizer — a component that converts text into numbers. Tokenizer choices ripple through the entire model: vocabulary size affects embedding size, tokenization granularity affects how the model "sees" language, and special tokens define the prompt interface.

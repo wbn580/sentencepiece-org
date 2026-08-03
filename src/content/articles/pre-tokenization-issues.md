@@ -3,6 +3,7 @@ title: "Pre-tokenization · Why You Shouldn't Split on Whitespace First"
 description: "Why whitespace-based pre-tokenization is harmful — how it breaks CJK and other non-segmented languages, and why modern tokenizers (SentencePiece) avoid it."
 section: "concept"
 publishDate: "2026-05-15T08:20:00Z"
+ogImage: "https://img.ulec.com.cn/AI/pre-tokenization-issues-2026-1880x1253.jpg"
 ---
 
 Pre-tokenization is the step before subword tokenization where raw text is split into preliminary units — typically words (split on spaces/punctuation). BPE and WordPiece traditionally require pre-tokenization. SentencePiece was designed to eliminate it.
