@@ -3,7 +3,7 @@ title: "Special Tokens · [CLS], [SEP], [PAD], [MASK] and Beyond"
 description: "How special tokens work in NLP tokenization — the role of control tokens in BERT, GPT, and T5 models, and how to configure them correctly."
 section: "code"
 publishDate: "2026-05-15T08:15:00Z"
-ogImage: "https://img.ulec.com.cn/AI/special-tokens-nlp-2026-1880x869.jpg"
+ogImage: "https://img.sentencepiece.org/AI/special-tokens-nlp-2026-1880x869.jpg"
 ---
 
 Special tokens are control characters in the tokenizer vocabulary that serve structural and functional roles. They are not part of natural language text but are essential for model operation.

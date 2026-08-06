@@ -8,7 +8,7 @@ tags: ["sentencepiece", "tokenization", "bpe", "unigram", "nlp"]
 references:
   - title: "Kudo, T. & Richardson, J. (2018). SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing. EMNLP."
     url: "https://arxiv.org/abs/1808.06226"
-ogImage: "https://img.ulec.com.cn/AI/sentencepiece-tokenizer-explained-2026-1880x1111.jpg"
+ogImage: "https://img.sentencepiece.org/AI/sentencepiece-tokenizer-explained-2026-1880x1111.jpg"
 ---
 
 SentencePiece is a subword tokenizer developed at Google, released in 2018 by Taku Kudo and John Richardson. It addressed a persistent problem in NLP: word-level tokenizers break on out-of-vocabulary words, character-level tokenizers generate excessively long sequences, and existing subword tokenizers (BPE, WordPiece) assumed whitespace-delimited text — an assumption that fails for Japanese, Chinese, Thai, and many other languages.

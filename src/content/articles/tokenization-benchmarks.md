@@ -3,7 +3,7 @@ title: "NLP Tokenization Benchmarks · Fertility, BLEU, and Downstream Performan
 description: "How tokenizer choices affect downstream NLP task performance — empirical benchmarks comparing BPE, Unigram, WordPiece, and character-level tokenization."
 section: "papers"
 publishDate: "2026-05-15T08:35:00Z"
-ogImage: "https://img.ulec.com.cn/AI/tokenization-benchmarks-2026-1880x1253.jpg"
+ogImage: "https://img.sentencepiece.org/AI/tokenization-benchmarks-2026-1880x1253.jpg"
 ---
 
 Domingo et al. (2022) conducted the most comprehensive tokenizer benchmark to date, comparing 5 tokenization methods across 6 languages and 4 downstream tasks.

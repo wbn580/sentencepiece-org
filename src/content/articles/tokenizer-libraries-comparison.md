@@ -3,7 +3,7 @@ title: "Tokenizer Libraries · SentencePiece, HuggingFace Tokenizers, tiktoken"
 description: "A comparison of the major tokenizer libraries — SentencePiece, HuggingFace tokenizers, tiktoken (OpenAI), and when to use each."
 section: "code"
 publishDate: "2026-05-15T08:20:00Z"
-ogImage: "https://img.ulec.com.cn/AI/tokenizer-libraries-comparison-2026-1880x1111.jpg"
+ogImage: "https://img.sentencepiece.org/AI/tokenizer-libraries-comparison-2026-1880x1111.jpg"
 ---
 
 Three tokenizer libraries dominate NLP production pipelines. Each serves different use cases.

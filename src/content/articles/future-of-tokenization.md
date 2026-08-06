@@ -3,7 +3,7 @@ title: "The Future of Tokenization · Beyond BPE and Unigram"
 description: "Emerging tokenization research — learned tokenization, differentiable tokenizers, vision-inspired approaches, and whether tokenizers will survive the next generation of models."
 section: "papers"
 publishDate: "2026-05-15T08:30:00Z"
-ogImage: "https://img.ulec.com.cn/AI/future-of-tokenization-2026-1880x1253.jpg"
+ogImage: "https://img.sentencepiece.org/AI/future-of-tokenization-2026-1880x1253.jpg"
 ---
 
 Three research directions are challenging the BPE/Unigram paradigm:

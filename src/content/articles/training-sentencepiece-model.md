@@ -3,7 +3,7 @@ title: "Training a SentencePiece Model · From Corpus to Tokenizer"
 description: "How to train a SentencePiece tokenizer from scratch — data preparation, parameter selection, training a BPE or Unigram model, and evaluating tokenizer quality."
 section: "code"
 publishDate: "2026-05-15T08:15:00Z"
-ogImage: "https://img.ulec.com.cn/AI/training-sentencepiece-model-2026-1880x1253.jpg"
+ogImage: "https://img.sentencepiece.org/AI/training-sentencepiece-model-2026-1880x1253.jpg"
 ---
 
 Training a SentencePiece model requires a large, high-quality text corpus. The model learns which subword units to include based on the statistical properties of the training text — garbage in, garbage out.

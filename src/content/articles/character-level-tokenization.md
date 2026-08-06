@@ -3,7 +3,7 @@ title: "Character-Aware Tokenization · Can We Skip Subwords?"
 description: "Exploring character-level and character-aware NLP models — CANINE, ByT5, CharFormer, and whether character-level models can replace subword tokenization entirely."
 section: "concept"
 publishDate: "2026-05-15T08:20:00Z"
-ogImage: "https://img.ulec.com.cn/AI/character-level-tokenization-2026-1880x1253.jpg"
+ogImage: "https://img.sentencepiece.org/AI/character-level-tokenization-2026-1880x1253.jpg"
 ---
 Subword tokenization dominates NLP, but character-level models offer an alternative: process raw characters (or bytes) directly, eliminating the tokenizer entirely.
 

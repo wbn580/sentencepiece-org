@@ -3,7 +3,7 @@ title: "Byte-Level BPE · How GPT Tokenization Handles Every Language"
 description: "How byte-level BPE works — starting from bytes instead of characters, handling any Unicode input, and the tradeoffs compared to character-level BPE."
 section: "concept"
 publishDate: "2026-05-15T08:15:00Z"
-ogImage: "https://img.ulec.com.cn/AI/byte-level-bpe-tokenization-2026-1880x869.jpg"
+ogImage: "https://img.sentencepiece.org/AI/byte-level-bpe-tokenization-2026-1880x869.jpg"
 ---
 
 Byte-level BPE (BBPE), introduced by GPT-2 (Radford et al., 2019), takes the logic of BPE to its extreme: the base vocabulary is individual bytes (0–255), not Unicode characters. This guarantees that every possible text — regardless of language, script, or encoding — can be tokenized.

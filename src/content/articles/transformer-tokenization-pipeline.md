@@ -3,7 +3,7 @@ title: "Transformer Tokenization · How Tokens Become Embeddings"
 description: "The path from text to model input — tokenization, token IDs, embedding lookup, positional encoding, and attention masking in the transformer pipeline."
 section: "concept"
 publishDate: "2026-05-15T08:15:00Z"
-ogImage: "https://img.ulec.com.cn/AI/transformer-tokenization-pipeline-2026-1880x869.jpg"
+ogImage: "https://img.sentencepiece.org/AI/transformer-tokenization-pipeline-2026-1880x869.jpg"
 ---
 
 Tokenization is the first step in the transformer pipeline, but tokens are not what the model processes. The full pipeline: text → tokens → token IDs → embeddings → transformer layers → output.

@@ -3,7 +3,7 @@ title: "The Kudo & Richardson 2018 Paper · Original SentencePiece Formulation"
 description: "A summary of the SentencePiece EMNLP 2018 paper — the motivation for lossless tokenization, the BPE and Unigram implementations, and the impact on modern NLP."
 section: "papers"
 publishDate: "2026-05-15T08:20:00Z"
-ogImage: "https://img.ulec.com.cn/AI/kudo-richardson-2018-paper-2026-1880x1111.jpg"
+ogImage: "https://img.sentencepiece.org/AI/kudo-richardson-2018-paper-2026-1880x1111.jpg"
 ---
 
 The 2018 EMNLP paper "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing" by Taku Kudo and John Richardson (Google) introduced SentencePiece as a practical solution to two problems: language-dependent pre-tokenization and irreversible tokenization.

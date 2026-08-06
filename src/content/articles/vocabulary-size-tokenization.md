@@ -3,7 +3,7 @@ title: "Vocabulary Size in Tokenization · How Many Tokens is Optimal?"
 description: "How vocabulary size affects tokenizer performance — the tradeoff between vocabulary size, sequence length, model embedding parameters, and multilingual coverage."
 section: "concept"
 publishDate: "2026-05-15T08:10:00Z"
-ogImage: "https://img.ulec.com.cn/AI/vocabulary-size-tokenization-2026-1813x1300.jpg"
+ogImage: "https://img.sentencepiece.org/AI/vocabulary-size-tokenization-2026-1813x1300.jpg"
 ---
 
 Vocabulary size is the most consequential hyperparameter in subword tokenization. It directly affects the model's embedding matrix size ($V \times d_{model}$) and the average sequence length. Choosing the right size is a tradeoff with no universal optimum.

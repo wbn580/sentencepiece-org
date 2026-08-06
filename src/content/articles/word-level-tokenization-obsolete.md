@@ -3,7 +3,7 @@ title: "Word-Level Tokenization · Why It's Obsolete in Modern NLP"
 description: "Why word-level tokenization has been replaced by subword methods — the OOV problem, vocabulary explosion, and comparison with modern subword approaches."
 section: "compare"
 publishDate: "2026-05-15T08:25:00Z"
-ogImage: "https://img.ulec.com.cn/AI/word-level-tokenization-obsolete-2026-1880x1253.jpg"
+ogImage: "https://img.sentencepiece.org/AI/word-level-tokenization-obsolete-2026-1880x1253.jpg"
 ---
 Word-level tokenization (each unique word = one token) was standard in NLP before 2016. It has been almost entirely replaced by subword methods.
 
