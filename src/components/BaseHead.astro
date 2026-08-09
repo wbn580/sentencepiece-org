@@ -31,6 +31,12 @@ const fallbackSchema = JSON.stringify({
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style data-uxfix="tap-target">
+@media (max-width: 820px){
+  a,button,input,select,textarea,[role="button"]{min-height:44px;min-width:44px;box-sizing:border-box}
+  header a,.header a,nav a,.nav a,.navbar a,.menu a,.site-header a,.topbar a,.footer a,footer a,.tags a,.tag a,.tagcloud a,a.button,.button,.btn,button,[role="button"]{display:inline-flex;align-items:center;justify-content:center}
+}
+</style>
 <title>{documentTitle}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
