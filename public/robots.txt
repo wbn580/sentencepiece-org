@@ -17,3 +17,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sentencepiece.org/sitemap-index.xml
+Sitemap: https://sentencepiece.org/sitemap.xml
